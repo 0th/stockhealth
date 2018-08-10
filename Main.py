@@ -491,8 +491,8 @@ class MainStock:
         if STATUS_INIT == False:
             self.get_NaverStock(init_code)
 
-        # self.addDayStock(init_code)
-        # self.addRealtimeStock(init_code)
+        self.addDayStock(init_code)
+        self.addRealtimeStock(init_code)
         self.startAlgorithm(init_code)
         self.uploadRankDB()
 

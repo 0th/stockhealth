@@ -11,8 +11,8 @@ RUN apt-get install -y --no-install-recommends python3.6 python3.6-dev python3-p
 RUN apt-get install -y git
 RUN python3.6 -m pip install pip --upgrade
 
-ADD . /pyapp-test7
-WORKDIR /pyapp-test7
+ADD . /pyapp-test9
+WORKDIR /pyapp-test9
 
 RUN pip3 install -r requirements.txt
 
