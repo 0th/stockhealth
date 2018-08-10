@@ -1,0 +1,64 @@
+2018-08-03 10:33:01.556400 MoonStock Program Started!!
+2018-08-03 10:33:01.556655 Started!!
+2018-08-03 11:10:58.669222 MoonStock Program Started!!
+2018-08-03 11:10:58.669424 Started!!
+2018-08-03 11:11:39.285663 MoonStock Program Started!!
+2018-08-03 11:11:39.285862 Started!!
+1. 위치:  addDayStock
+2. 러닝타임:  11
+2018-08-03 11:12:36.987011 MoonStock Program Started!!
+2018-08-03 11:12:36.987211 Started!!
+1. 위치:  addDayStock
+2. 러닝타임:  11
+2018-08-03 11:24:06.457527 MoonStock Program Started!!
+2018-08-03 11:24:06.457729 Started!!
+2018-08-03 11:24:26.763464 MoonStock Program Started!!
+2018-08-03 11:24:26.763661 Started!!
+5. 사라진 회사  ['노루홀딩스우', '한일시멘트', '유화증권', '유화증권우', '신영와코루', '성지건설', '동남합성', '동북아13호', 'TIGER KRX100', 'TIGER 국채3년', '마이다스 200커버드콜5%OTM', 'TIGER 삼성그룹펀더멘털', '트러스제7호', '세화아이엠씨', 'TREX 펀더멘탈 200', 'TIGER 생활필수품', 'KODEX MSCI Korea', 'TIGER 자동차', 'TIGER 화학', '마이티 코스피100', 'TIGER 200커버드콜5%OTM', 'TIGER 베타플러스', '파워 중기국고채', 'ARIRANG 바벨 채권', 'ARIRANG 단기유동성', 'KBSTAR 일본TOPIX레버리지(H)', 'SMART 선진국MSCI World(합성 H)', '흥국 S&P코리아로우볼', 'TIGER 가격조정', 'KODEX 미국S&P에너지(합성)', '파워 단기채', 'TIGER 200 산업재', 'TIGER 200 생활소비재', 'ARIRANG 심천차이넥스트(합성)', 'KODEX 경기소비재', 'TIGER 코스닥150로우볼', 'KBSTAR 미국장기국채선물레버리지(합성 H)', 'KODEX 단기변동금리부채권액티브', 'KODEX MSCI모멘텀', 'KODEX MSCI밸류', 'KODEX MSCI퀄리티', 'TIGER 코스피대형주', 'TIGER 코스피중형주', 'KODEX 최소변동성', 'KODEX MSCI KOREA ESG유니버설', 'TIGER MSCI KOREA ESG유니버설', 'TIGER MSCI KOREA ESG리더스', 'TIGER 200커버드콜ATM', 'ARIRANG 국채선물10년', '신한 인버스 은 선물 ETN(H)', '신한 인버스 금 선물 ETN(H)', '신한 인버스 구리 선물 ETN(H)', '신한 다우존스지수 선물 ETN(H)', '신한 달러인덱스 선물 ETN(H)', '신한 인버스 달러인덱스 선물 ETN(H)', '신한 MSCI 인도네시아 선물 ETN(H)', '신한 인버스 MSCI 인도네시아 선물 ETN(H)', '대신 WTI원유 선물 ETN(H)', '대신 아연선물 ETN(H)', '대신 인버스 아연선물 ETN(H)', '미래에셋 인버스 원유선물혼합 ETN(H)', '미래에셋 미국 시니어론 100 ETN(H)', '미래에셋 미국 시니어론 100 ETN', '미래에셋 호주 ASX200 ETN(H)', '삼성 미국 대형 가치주 ETN(H)', '삼성 미국 중소형 성장주 ETN(H)', '삼성 미국 중소형 가치주 ETN(H)', '삼성 미국 대형 가치주 ETN', '삼성 미국 중소형 성장주 ETN', '삼성 미국 중소형 가치주 ETN', '삼성 Alerian 에너지인프라 MLP ETN', '삼성 China A50 선물 ETN(H)', '삼성 인도 Nifty50 선물 ETN(H)', '삼성 인버스 인도 Nifty50 선물 ETN(H)', '삼성 레버리지 인도 Nifty50 선물 ETN(H)', 'QV 스마트리밸런싱 250/3 ETN', 'QV 롱숏 K150 매수 로우볼 매도 ETN', 'QV 스마트리밸런싱 260/4 ETN', 'TRUE 빅5 동일가중 ETN', 'TRUE 목표변동성20 코스피선물 ETN', 'TRUE 섹터탑픽 ETN', 'TRUE 코리아프리미어 ETN', 'TRUE 다우존스 지속가능경영 코리아 ETN', 'TRUE 인버스 유로선물 ETN', 'TRUE 위안화 중국5년국채 ETN', 'TRUE 인버스 차이나H ETN(H)', 'KB Monthly Best 11 ETN', 'KB KQ Monthly Best 11 ETN', 'KB 우량주 Monthly Best 11 ETN', 'KB KTOP30 ETN', '미래에셋 미국 대형주 ETN(H)', '미래에셋 미국 중형주 ETN(H)', '미래에셋 인버스 S&P500 ETN(H)', '미래에셋 미국 리츠 ETN(H)', '미래에셋 미국 헬스케어 ETN(H)', '미래에셋 미국 고배당주 ETN(H)', '미래에셋 유럽 대형주 ETN(H)', '미래에셋 유럽 중형주 ETN(H)', '미래에셋 일본 대형주 ETN(H)', '미래에셋 글로벌 리츠 ETN(H)']
+6. 사라진 회사 수 100
+1. 위치:  addRealtimeStock
+2. 러닝타임:  141
+2018-08-03 11:57:50.445868 MoonStock Program Started!!
+2018-08-03 11:57:50.446109 Started!!
+2018-08-03 12:00:56.854422 MoonStock Program Started!!
+2018-08-03 12:00:56.854716 Started!!
+2018-08-03 12:02:59.586247 MoonStock Program Started!!
+2018-08-03 12:02:59.586443 Started!!
+2018-08-03 12:03:07.503467 MoonStock Program Started!!
+2018-08-03 12:03:07.503769 Started!!
+2018-08-03 12:05:02.036889 MoonStock Program Started!!
+2018-08-03 12:05:02.037181 Started!!
+2018-08-03 12:09:10.816011 MoonStock Program Started!!
+2018-08-03 12:09:10.816208 Started!!
+2018-08-03 12:21:45.462152 MoonStock Program Started!!
+2018-08-03 12:21:45.465067 Started!!
+1. 위치:  startAlgorithm
+2. 러닝타임:  21
+2018-08-03 13:20:47.609526 MoonStock Program Started!!
+2018-08-03 13:20:47.609925 Started!!
+1. 사라진 회사  ['노루홀딩스우', '한일시멘트', '유화증권', '유화증권우', '신영와코루', '성지건설', 'TIGER 국채3년', '마이다스 200커버드콜5%OTM', 'TIGER 삼성그룹펀더멘털', '세화아이엠씨', 'TREX 펀더멘탈 200', 'KODEX MSCI Korea', '마이티 코스피100', 'TIGER 200커버드콜5%OTM', 'TIGER 베타플러스', '파워 중기국고채', 'ARIRANG 바벨 채권', 'ARIRANG 단기유동성', 'KBSTAR 일본TOPIX레버리지(H)', 'SMART 선진국MSCI World(합성 H)', '흥국 S&P코리아로우볼', 'TIGER 가격조정', '파워 단기채', 'TIGER 200 생활소비재', 'ARIRANG 심천차이넥스트(합성)', 'KODEX 경기소비재', 'TIGER 코스닥150로우볼', 'KBSTAR 미국장기국채선물레버리지(합성 H)', 'KODEX MSCI퀄리티', 'TIGER 코스피대형주', 'KODEX 최소변동성', 'KODEX MSCI KOREA ESG유니버설', 'TIGER MSCI KOREA ESG유니버설', 'TIGER MSCI KOREA ESG리더스', 'TIGER 200커버드콜ATM', 'ARIRANG 국채선물10년', '신한 달러인덱스 선물 ETN(H)', '신한 인버스 달러인덱스 선물 ETN(H)', '신한 MSCI 인도네시아 선물 ETN(H)', '신한 인버스 MSCI 인도네시아 선물 ETN(H)', '대신 아연선물 ETN(H)', '대신 인버스 아연선물 ETN(H)', '미래에셋 인버스 원유선물혼합 ETN(H)', '미래에셋 미국 시니어론 100 ETN(H)', '미래에셋 미국 시니어론 100 ETN', '미래에셋 호주 ASX200 ETN(H)', '삼성 미국 중소형 가치주 ETN(H)', '삼성 미국 대형 가치주 ETN', '삼성 미국 중소형 성장주 ETN', '삼성 미국 중소형 가치주 ETN', '삼성 Alerian 에너지인프라 MLP ETN', '삼성 인도 Nifty50 선물 ETN(H)', '삼성 인버스 인도 Nifty50 선물 ETN(H)', '삼성 레버리지 인도 Nifty50 선물 ETN(H)', 'QV 스마트리밸런싱 250/3 ETN', 'QV 롱숏 K150 매수 로우볼 매도 ETN', 'QV 스마트리밸런싱 260/4 ETN', 'TRUE 빅5 동일가중 ETN', 'TRUE 목표변동성20 코스피선물 ETN', 'TRUE 섹터탑픽 ETN', 'TRUE 코리아프리미어 ETN', 'TRUE 인버스 유로선물 ETN', 'TRUE 위안화 중국5년국채 ETN', 'TRUE 인버스 차이나H ETN(H)', 'KB Monthly Best 11 ETN', 'KB KQ Monthly Best 11 ETN', 'KB 우량주 Monthly Best 11 ETN', '미래에셋 미국 대형주 ETN(H)', '미래에셋 미국 중형주 ETN(H)', '미래에셋 인버스 S&P500 ETN(H)', '미래에셋 미국 리츠 ETN(H)', '미래에셋 미국 헬스케어 ETN(H)', '미래에셋 미국 고배당주 ETN(H)', '미래에셋 유럽 대형주 ETN(H)', '미래에셋 일본 대형주 ETN(H)', '미래에셋 글로벌 리츠 ETN(H)']
+2. 사라진 회사 수 76
+1. 위치:  addRealtimeStock
+2. 러닝타임:  157
+2018-08-03 13:30:03.682783 MoonStock Program Started!!
+2018-08-03 13:30:03.682989 Started!!
+2018-08-03 14:30:24.240562 MoonStock Program Started!!
+2018-08-03 14:30:24.240774 Started!!
+2018-08-03 14:34:17.335803 MoonStock Program Started!!
+2018-08-03 14:34:17.336005 Started!!
+2018-08-03 14:34:41.077722 MoonStock Program Started!!
+2018-08-03 14:34:41.077920 Started!!
+2018-08-03 14:36:31.868326 MoonStock Program Started!!
+2018-08-03 14:36:31.868534 Started!!
+2018-08-03 14:42:36.394690 MoonStock Program Started!!
+2018-08-03 14:42:36.395073 Started!!
+2018-08-03 16:29:12.189142 MoonStock Program Started!!
+2018-08-03 16:29:12.189356 Started!!
+2018-08-03 16:36:17.555348 MoonStock Program Started!!
+2018-08-03 16:36:17.555557 Started!!
+2018-08-03 18:23:01.024744 MoonStock Program Started!!
+2018-08-03 18:23:01.043114 Started!!
+2018-08-03 18:23:22.085015 MoonStock Program Started!!
+2018-08-03 18:23:22.085386 Started!!
+2018-08-03 18:23:58.072238 MoonStock Program Started!!
+2018-08-03 18:23:58.072422 Started!!
