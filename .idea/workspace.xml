@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9166275-08f3-424d-95ba-fe0f2a6dfed6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Log_File.py" afterPath="$PROJECT_DIR$/Log_File.py" />
       <change beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/naver_ks.db" afterPath="$PROJECT_DIR$/db/naver_ks.db" />
-      <change beforePath="$PROJECT_DIR$/수정전/AL_Manager.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/수정전/Main.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,22 +19,20 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="520" column="0" lean-forward="true" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
+            <state relative-caret-position="94">
+              <caret line="262" column="20" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
                 <element signature="e#1791#1839#0" expanded="false" />
                 <element signature="e#1921#2024#0" expanded="false" />
                 <element signature="e#2111#2985#0" expanded="false" />
-                <element signature="e#3061#5153#0" expanded="false" />
-                <element signature="e#5233#7562#0" expanded="false" />
-                <element signature="e#7636#10263#0" expanded="false" />
-                <element signature="e#10330#12547#0" expanded="false" />
-                <element signature="e#12597#13045#0" expanded="false" />
-                <element signature="e#13096#13324#0" expanded="false" />
-                <element signature="e#13380#13575#0" expanded="false" />
-                <element signature="e#13635#14291#0" expanded="false" />
-                <element signature="e#15017#15260#0" expanded="false" />
+                <element signature="e#7613#10240#0" expanded="false" />
+                <element signature="e#10307#12524#0" expanded="false" />
+                <element signature="e#12574#13022#0" expanded="false" />
+                <element signature="e#13073#13301#0" expanded="false" />
+                <element signature="e#13357#13552#0" expanded="false" />
+                <element signature="e#13612#14268#0" expanded="false" />
+                <element signature="e#14994#15237#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -366,14 +358,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Main.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -552,22 +537,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="520" column="0" lean-forward="true" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
+        <state relative-caret-position="94">
+          <caret line="262" column="20" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
           <folding>
             <element signature="e#16#27#0" expanded="true" />
             <element signature="e#1791#1839#0" expanded="false" />
             <element signature="e#1921#2024#0" expanded="false" />
             <element signature="e#2111#2985#0" expanded="false" />
-            <element signature="e#3061#5153#0" expanded="false" />
-            <element signature="e#5233#7562#0" expanded="false" />
-            <element signature="e#7636#10263#0" expanded="false" />
-            <element signature="e#10330#12547#0" expanded="false" />
-            <element signature="e#12597#13045#0" expanded="false" />
-            <element signature="e#13096#13324#0" expanded="false" />
-            <element signature="e#13380#13575#0" expanded="false" />
-            <element signature="e#13635#14291#0" expanded="false" />
-            <element signature="e#15017#15260#0" expanded="false" />
+            <element signature="e#7613#10240#0" expanded="false" />
+            <element signature="e#10307#12524#0" expanded="false" />
+            <element signature="e#12574#13022#0" expanded="false" />
+            <element signature="e#13073#13301#0" expanded="false" />
+            <element signature="e#13357#13552#0" expanded="false" />
+            <element signature="e#13612#14268#0" expanded="false" />
+            <element signature="e#14994#15237#0" expanded="false" />
           </folding>
         </state>
       </provider>

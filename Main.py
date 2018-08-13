@@ -163,12 +163,12 @@ class MainStock:
             pages = quotient + 1
 
 
-            # print('//////////////디버그용/////////////////////////')
-            # print('1. 순서: ',cnt)
-            # print('2. 회사: ',company)
-            # print('3. 코드: ',code)
-            # print('4. DB 최근 데이터 :',old)
-            # print('5. 현재와 DB 날짜 차이 :',value)
+            print('---------------------------------------')
+            print('1. 순서: ',cnt)
+            print('2. 회사: ',company)
+            print('3. 코드: ',code)
+            print('4. DB 최근 데이터 :',old)
+            print('5. 현재와 DB 날짜 차이 :',value)
 
             if quotient == 0 and remainder == 0:
                 pass
@@ -230,10 +230,10 @@ class MainStock:
             code = row[0]
             company = row[1]
 
-            # print('///////////디버그용/////////////////////')
-            # print('1. 순서: ',cnt)
-            # print('2 회사: ',company)
-            # print('3 코드: ',code)
+            print('---------------------------------------')
+            print('1. 순서: ',cnt)
+            print('2 회사: ',company)
+            print('3 코드: ',code)
 
             now = datetime.datetime.now()
             nowDate = now.strftime('%Y%m%d%H%M%S')
@@ -260,7 +260,7 @@ class MainStock:
                 length = 1
 
                 DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
-                # print('04. DB 저장 완료')
+                print('04. DB 저장 완료')
 
 
             except Exception as e:
