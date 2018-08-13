@@ -11,8 +11,8 @@ RUN apt-get install -y --no-install-recommends python3.6 python3.6-dev python3-p
 RUN apt-get install -y git
 RUN python3.6 -m pip install pip --upgrade
 
-ADD . /pyapp-test9
-WORKDIR /pyapp-test9
+ADD . /pyapp-stockhealth
+WORKDIR /pyapp-stockhealth
 
 RUN pip3 install -r requirements.txt
 

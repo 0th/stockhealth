@@ -531,8 +531,12 @@ def main():
     LogPrint(curr_date(), "MoonStock Program Started!!")
     LogPrint(datetime.datetime.now(), "Started!!")
     ms = MainStock()
-    # ms.monitorTask()
     ms.processTask()
+
+
+
+
+
 
 if __name__ == '__main__':
     main()
