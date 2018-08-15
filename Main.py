@@ -144,6 +144,7 @@ class MainStock:
         now = datetime.datetime.now().strftime("%Y.%m.%d")
         start = time.time()
         LogPrint(curr_date(),'1. addDayStock 시작')
+
         for row in code_stock:
 
             cnt += 1
@@ -153,22 +154,46 @@ class MainStock:
             limit = 1
             df = pd.DataFrame()
             column = '날짜'
+
+
+
             olds = DB_Manager.db_control().viewDBdata_Day(dir_naver_ks, column, table, column, limit)
-            old = olds[0][0]
-
-            value = self.cal_elapsedTime(now,old)
-
-            quotient = value//10
-            remainder = value%10
-            pages = quotient + 1
+            print('olds: ',olds)
 
 
-            print('---------------------------------------')
-            print('1. 순서: ',cnt)
-            print('2. 회사: ',company)
-            print('3. 코드: ',code)
-            print('4. DB 최근 데이터 :',old)
-            print('5. 현재와 DB 날짜 차이 :',value)
+            try:
+
+                olds = DB_Manager.db_control().viewDBdata_Day(dir_naver_ks, column, table, column, limit)
+                print('olds: ',olds)
+
+                old = olds[0][0]
+                print('old: ',old)
+
+                value = self.cal_elapsedTime(now,old)
+                print('value: ',value)
+
+                quotient = value//10
+                remainder = value%10
+                pages = quotient + 1
+
+                print('quotient: ',quotient)
+                print('remainder: ',remainder)
+                print('pages: ',pages)
+
+
+            except Exception as e:
+                print('#1, AddDay: 예외가 발생했습니다.(1)', e)
+
+            # value = 1
+            # quotient = 1
+            # remainder = 1
+
+            # print('---------------------------------------')
+            print('#1.AddDay:',cnt,company,code,'/',value)
+            # print('2. 회사: ',company)
+            # print('3. 코드: ',code)
+            # print('4. DB 최근 데이터 :',old)
+            # print('5. 현재와 DB 날짜 차이 :',value)
 
             if quotient == 0 and remainder == 0:
                 pass
@@ -180,25 +205,34 @@ class MainStock:
                 # print('6. 가져올 웹 페이지 수 :', pages)
                 url = 'http://finance.naver.com/item/sise_day.nhn?code={code}'.format(code=code)
 
-                for page in range(1, pages):
-                    pg_url = '{url}&page={page}'.format(url=url, page=page)
-                    df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
+                try:
 
-                df = df.dropna()
-                # print('7. 웹에서 가져온 데이터 :', df)
-                days = df[['날짜']]
-                arr_days = days['날짜'].values
+                    for page in range(1, pages):
+                        pg_url = '{url}&page={page}'.format(url=url, page=page)
+                        df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
+
+                    df = df.dropna()
+                    # print('7. 웹에서 가져온 데이터 :', df)
+                    days = df[['날짜']]
+                    arr_days = days['날짜'].values
 
 
-                for day in arr_days:
 
-                    value = self.cal_elapsedTime(day,old)
-                    if value > 0 :
-                        indexOfday = df[df['날짜'] == day].index.values.astype(int)
-                        unit_df = df.ix[indexOfday]
-                        unit_df.to_sql('kospi_' + code, con_naver_ks, if_exists='append', index=False)
-                    else:
-                        pass
+                    for day in arr_days:
+
+                        value = self.cal_elapsedTime(day,old)
+                        if value > 0 :
+                            indexOfday = df[df['날짜'] == day].index.values.astype(int)
+                            unit_df = df.ix[indexOfday]
+                            unit_df.to_sql('kospi_' + code, con_naver_ks, if_exists='append', index=False)
+                            # print(unit_df)
+
+                        else:
+                            # print('else')
+                            pass
+
+                except Exception as e:
+                    print('#1, AddDay: 예외가 발생했습니다.(2)', e)
 
         self.timeCheck(start, location)
 
@@ -214,8 +248,8 @@ class MainStock:
         table = '\'Stock_Realtime\''
         value = DB_Manager.db_control().checkDBtable(dir_naver_ks_Realtime, table)
         temp_val = value[0]
-
         LogPrint(curr_date(),'2. addRealtimeStock 시작')
+
 
         if (temp_val[0] == 0):
             column = '(\'종목\' TEXT PRIMARY KEY ,\'코드\' TEXT ,\'체결가\' INTEGER,\'체결시각\' TEXT)'
@@ -230,17 +264,14 @@ class MainStock:
             code = row[0]
             company = row[1]
 
-            print('---------------------------------------')
-            print('1. 순서: ',cnt)
-            print('2 회사: ',company)
-            print('3 코드: ',code)
-
             now = datetime.datetime.now()
             nowDate = now.strftime('%Y%m%d%H%M%S')
             url= 'https://finance.naver.com/item/sise_time.nhn?code={code}&thistime={thistime}'.format(code=code, thistime = nowDate)
             pg_url = '{url}&page={page}'.format(url=url, page=1)
 
+
             try:
+
                 df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
                 df = df.dropna()
                 data = df.ix[1]
@@ -254,26 +285,29 @@ class MainStock:
                 data_column.append(data[1])
                 data_column.append(Engagement_time)
 
+
                 table = 'Stock_Realtime'
                 column = "종목, 코드, 체결가, 체결시각"
                 column = '(\'종목\',\'코드\',\'체결가\',\'체결시각\') values (?,?,?,?)'
                 length = 1
 
                 DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
-                print('04. DB 저장 완료')
+
+                print('#2, AddRealtime: ', cnt, company, code,data[1], 'DB 저장완료')
 
 
             except Exception as e:
-                # print('데이터가 없습니다.', e)
+                print('#2, AddRealtime: ', cnt, company, code, '/ 데이터가 없습니다.')
                 dropCompany.append(company)
                 dropCode.append(code)
 
 
-        # print('----------------------------------')
         # LogPrint('1. 사라진 회사 ', dropCompany)
         # LogPrint('2. 사라진 회사 수', len(dropCompany))
 
         self.timeCheck(start,location)
+
+
 
     #2-3. [프로세스] 전략진행
     def startAlgorithm(self,code_stock):
@@ -297,9 +331,6 @@ class MainStock:
             list_price = []
             list_daydiff = []
             count = count + 1
-
-
-
 
             for value in temp_list_price:
 
@@ -363,12 +394,15 @@ class MainStock:
         # 3. 현재가
         # 4. 점수
         # 5. 상태
+        # 6. 날짜
 
 
         count = 0
         start = time.time()
         locaion = 'uploadRankDB'
 
+
+        update_time = self.now.strftime('%Y-%m-%d %H:%M:%S')
         now_date = self.now.strftime('%Y%m%d')
         now_date = now_date[2:8]
         table = 'STG1_' + now_date
@@ -376,7 +410,6 @@ class MainStock:
         data_json =''
         rows = DB_Manager.db_control().viewDBdata_all(dir_result, table)
         LogPrint(curr_date(),'4. uploadRankDB 시작')
-
 
         for row in rows:
 
@@ -406,7 +439,8 @@ class MainStock:
                            + '\'' + 'Code'+ '\'' +':'+ '\'' +str(row[1]) +'\'' +',' \
                            + '\'' + 'Price'+'\'' + ':' + str(price) +',' \
                            + '\'' + 'Score' +'\'' + ':' + str(row[11]) + ',' \
-                           + '\'' + 'Status' + '\'' + ':'+'\'' + str(row[10]) +'\'' + '}'+','
+                           + '\'' + 'Status' + '\'' + ':' + '\'' + str(row[10]) + '\'' + ',' \
+                           + '\'' + 'Update' + '\'' + ':'+'\'' + update_time +'\'' + '}'+','
 
                     data_json = data_json + data
 
@@ -492,9 +526,9 @@ class MainStock:
             self.get_NaverStock(init_code)
 
         self.addDayStock(init_code)
-        self.addRealtimeStock(init_code)
-        self.startAlgorithm(init_code)
-        self.uploadRankDB()
+        # self.addRealtimeStock(init_code)
+        # self.startAlgorithm(init_code)
+        # self.uploadRankDB()
 
         sec = self.timeCheck(start, location)
         print('sec: ',sec)

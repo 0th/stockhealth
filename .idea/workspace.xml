@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9166275-08f3-424d-95ba-fe0f2a6dfed6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/AL_Manager.py" afterPath="$PROJECT_DIR$/AL_Manager.py" />
       <change beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
+      <change beforePath="$PROJECT_DIR$/db/RESULT.db" afterPath="$PROJECT_DIR$/db/RESULT.db" />
+      <change beforePath="$PROJECT_DIR$/db/naver_ks.db" afterPath="$PROJECT_DIR$/db/naver_ks.db" />
+      <change beforePath="$PROJECT_DIR$/db/naver_ks_Realtime.db" afterPath="$PROJECT_DIR$/db/naver_ks_Realtime.db" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,20 +24,33 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="262" column="20" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
                 <element signature="e#1791#1839#0" expanded="false" />
                 <element signature="e#1921#2024#0" expanded="false" />
                 <element signature="e#2111#2985#0" expanded="false" />
-                <element signature="e#7613#10240#0" expanded="false" />
-                <element signature="e#10307#12524#0" expanded="false" />
-                <element signature="e#12574#13022#0" expanded="false" />
-                <element signature="e#13073#13301#0" expanded="false" />
-                <element signature="e#13357#13552#0" expanded="false" />
-                <element signature="e#13612#14268#0" expanded="false" />
-                <element signature="e#14994#15237#0" expanded="false" />
+                <element signature="e#6123#8313#0" expanded="false" />
+                <element signature="e#8389#11013#0" expanded="false" />
+                <element signature="e#11080#13468#0" expanded="false" />
+                <element signature="e#13518#13966#0" expanded="false" />
+                <element signature="e#14017#14245#0" expanded="false" />
+                <element signature="e#14301#14496#0" expanded="false" />
+                <element signature="e#14556#15212#0" expanded="false" />
+                <element signature="e#15944#16187#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AL_Manager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AL_Manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-650">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#1#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/Log_File.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,10 +156,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3094" />
-    <option name="y" value="215" />
-    <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="x" value="217" />
+    <option name="y" value="103" />
+    <option name="width" value="1432" />
+    <option name="height" value="1209" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -159,8 +177,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,13 +349,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3094" y="215" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="217" y="103" width="1432" height="1209" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18571429" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21787709" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35497382" sideWeight="0.50535715" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35497382" sideWeight="0.49464285" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35444152" sideWeight="0.51047486" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35444152" sideWeight="0.48952514" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -484,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AL_Manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DB_Manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -530,27 +540,38 @@
     <entry file="file://$PROJECT_DIR$/Log_File.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AL_Manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="262" column="20" lean-forward="true" selection-start-line="262" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
           <folding>
             <element signature="e#16#27#0" expanded="true" />
             <element signature="e#1791#1839#0" expanded="false" />
             <element signature="e#1921#2024#0" expanded="false" />
             <element signature="e#2111#2985#0" expanded="false" />
-            <element signature="e#7613#10240#0" expanded="false" />
-            <element signature="e#10307#12524#0" expanded="false" />
-            <element signature="e#12574#13022#0" expanded="false" />
-            <element signature="e#13073#13301#0" expanded="false" />
-            <element signature="e#13357#13552#0" expanded="false" />
-            <element signature="e#13612#14268#0" expanded="false" />
-            <element signature="e#14994#15237#0" expanded="false" />
+            <element signature="e#6123#8313#0" expanded="false" />
+            <element signature="e#8389#11013#0" expanded="false" />
+            <element signature="e#11080#13468#0" expanded="false" />
+            <element signature="e#13518#13966#0" expanded="false" />
+            <element signature="e#14017#14245#0" expanded="false" />
+            <element signature="e#14301#14496#0" expanded="false" />
+            <element signature="e#14556#15212#0" expanded="false" />
+            <element signature="e#15944#16187#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -57,7 +57,8 @@ class AlgorithmManager:
         EVAL_2 = numpy.float64(numpy.int(5000 * numpy.clip(G_Result2,-0.02,0.02)))
         EVAL_3 = numpy.float64(numpy.int(1000/3 * numpy.clip(G_Result3,-0.3,0.3)))
         EVAL_4 = numpy.float64(numpy.int(20 * numpy.clip(G_Result4,-5,5)))
-        EVAL_TOTAL = (abs(EVAL_2 * EVAL_3 * EVAL_4)**(1/3)) * numpy.sign(G_Result2)
+        # EVAL_TOTAL = (abs(EVAL_2 * EVAL_3 * EVAL_4)**(1/3)) * numpy.sign(G_Result2)
+        EVAL_TOTAL = numpy.int(5 * (100 + (abs(EVAL_2 * EVAL_3 * EVAL_4) ** (1 / 3)) * numpy.sign(G_Result2)))/10 #형준180815
         # * numpy.log(abs(G_Result4) + 1) ** 0.5 * numpy.sign(G_Result4))
         # print(type(EVAL_2),type(EVAL_TOTAL))
 
