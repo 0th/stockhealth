@@ -235,13 +235,15 @@ class MainStock:
 
             print('--------------------------------')
             print(code,company)
-
-
+            print(url)
+            print(pg_url)
 
             try:
 
                 df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
+                print(df)
                 df = df.dropna()
+                print(df)
                 data = df.ix[1]
                 print('data: ', data)
 
