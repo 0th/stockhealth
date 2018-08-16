@@ -238,33 +238,62 @@ class MainStock:
             print(url)
             print(pg_url)
 
-            try:
-                df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
-                print(df)
-                df = df.dropna()
-                print(df)
-                data = df.ix[1]
+            df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
+            print(df)
+            df = df.dropna()
+            print(df)
+            data = df.ix[1]
 
-                print('data: ', data)
-                nowDay = now.strftime('%Y-%m-%d')
-                Engagement_time = nowDay + ' ' + data[0]
-                data_column = []
-                data_column.append(company)
-                data_column.append(code)
-                data_column.append(data[1])
-                data_column.append(Engagement_time)
+            print('data: ', data)
+            nowDay = now.strftime('%Y-%m-%d')
+            Engagement_time = nowDay + ' ' + data[0]
+            data_column = []
+            data_column.append(company)
+            data_column.append(code)
+            data_column.append(data[1])
+            data_column.append(Engagement_time)
 
-                print('data_column: ', data_column)
-                table = 'Stock_Realtime'
-                column = '(\'종목\',\'코드\',\'체결가\',\'체결시각\') values (?,?,?,?)'
-                length = 1
-                DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
-                # LogPrint(curr_date(), '#2.AddRealtime:', cnt, company, code, data[1], 'DB 저장완료')
+            print('data_column: ', data_column)
+            table = 'Stock_Realtime'
+            column = '(\'종목\',\'코드\',\'체결가\',\'체결시각\') values (?,?,?,?)'
+            length = 1
+            DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
+            # LogPrint(curr_date(), '#2.AddRealtime:', cnt, company, code, data[1], 'DB 저장완료')
 
-            except Exception as e:
-                print('#2, AddRealtime: ', cnt, company, code, '/ 데이터가 없습니다.')
-                dropCompany.append(company)
-                dropCode.append(code)
+            print('#2, AddRealtime: ', cnt, company, code, '/ 데이터가 없습니다.')
+            dropCompany.append(company)
+            dropCode.append(code)
+
+
+
+
+            # try:
+            #     df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
+            #     print(df)
+            #     df = df.dropna()
+            #     print(df)
+            #     data = df.ix[1]
+            #
+            #     print('data: ', data)
+            #     nowDay = now.strftime('%Y-%m-%d')
+            #     Engagement_time = nowDay + ' ' + data[0]
+            #     data_column = []
+            #     data_column.append(company)
+            #     data_column.append(code)
+            #     data_column.append(data[1])
+            #     data_column.append(Engagement_time)
+            #
+            #     print('data_column: ', data_column)
+            #     table = 'Stock_Realtime'
+            #     column = '(\'종목\',\'코드\',\'체결가\',\'체결시각\') values (?,?,?,?)'
+            #     length = 1
+            #     DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
+            #     # LogPrint(curr_date(), '#2.AddRealtime:', cnt, company, code, data[1], 'DB 저장완료')
+            #
+            # except Exception as e:
+            #     print('#2, AddRealtime: ', cnt, company, code, '/ 데이터가 없습니다.')
+            #     dropCompany.append(company)
+            #     dropCode.append(code)
 
 
         # LogPrint('1. 사라진 회사 ', dropCompany)
