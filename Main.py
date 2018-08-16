@@ -468,14 +468,8 @@ class MainStock:
             self.get_NaverStock(init_code)
 
         self.addDayStock(init_code)
-        self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
-
         self.addRealtimeStock(init_code)
-        self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
-
         self.startAlgorithm(init_code)
-        self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
-
         self.uploadRankDB()
 
         sec = self.timeCheck(start, location)
@@ -499,7 +493,7 @@ def main():
     LogPrint(curr_date(), "MoonStock Program Started!!")
     LogPrint(datetime.datetime.now(), "Started!!")
     ms = MainStock()
-    ms.monitorTask()
+    # ms.monitorTask()
     ms.processTask()
 
 
