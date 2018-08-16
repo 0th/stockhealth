@@ -60,10 +60,10 @@ class MainStock:
     check_replay = 0
 
 
-    DEF_ALIVE_TM = 300
+    DEF_ALIVE_TM = 600
     DEF_PRO_THR = 0
-    REPEAT_TIME = 300
-    COUNT_TIME = 0
+    # REPEAT_TIME = 300
+    # COUNT_TIME = 0
 
 
 
@@ -155,45 +155,18 @@ class MainStock:
             df = pd.DataFrame()
             column = '날짜'
 
-
-
-            olds = DB_Manager.db_control().viewDBdata_Day(dir_naver_ks, column, table, column, limit)
-            print('olds: ',olds)
-
-
             try:
-
                 olds = DB_Manager.db_control().viewDBdata_Day(dir_naver_ks, column, table, column, limit)
-                print('olds: ',olds)
-
                 old = olds[0][0]
-                print('old: ',old)
-
                 value = self.cal_elapsedTime(now,old)
-                print('value: ',value)
-
                 quotient = value//10
                 remainder = value%10
                 pages = quotient + 1
-
-                print('quotient: ',quotient)
-                print('remainder: ',remainder)
-                print('pages: ',pages)
-
-
             except Exception as e:
                 print('#1, AddDay: 예외가 발생했습니다.(1)', e)
 
-            # value = 1
-            # quotient = 1
-            # remainder = 1
+            LogPrint(curr_date(),'#1.AddDay:',cnt,company,code,old,'/',value)
 
-            # print('---------------------------------------')
-            print('#1.AddDay:',cnt,company,code,'/',value)
-            # print('2. 회사: ',company)
-            # print('3. 코드: ',code)
-            # print('4. DB 최근 데이터 :',old)
-            # print('5. 현재와 DB 날짜 차이 :',value)
 
             if quotient == 0 and remainder == 0:
                 pass
@@ -201,41 +174,34 @@ class MainStock:
 
                 if(remainder > 0):
                     pages = 2
-
-                # print('6. 가져올 웹 페이지 수 :', pages)
                 url = 'http://finance.naver.com/item/sise_day.nhn?code={code}'.format(code=code)
-
-                try:
-
-                    for page in range(1, pages):
+                for page in range(1, pages):
+                    try:
                         pg_url = '{url}&page={page}'.format(url=url, page=page)
                         df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
+                        # print(df)
+                    except:
+                        print('#1, AddDay: 예외가 발생했습니다.(2)', e)
 
-                    df = df.dropna()
-                    # print('7. 웹에서 가져온 데이터 :', df)
-                    days = df[['날짜']]
-                    arr_days = days['날짜'].values
+                df = df.dropna()
+                days = df[['날짜']]
+                arr_days = days['날짜'].values
+                # print('7. 웹에서 가져온 데이터 :', df)
 
 
+                for day in arr_days:
 
-                    for day in arr_days:
+                    value = self.cal_elapsedTime(day,old)
+                    if value > 0 :
+                        indexOfday = df[df['날짜'] == day].index.values.astype(int)
+                        unit_df = df.ix[indexOfday]
+                        unit_df.to_sql('kospi_' + code, con_naver_ks, if_exists='append', index=False)
+                        # print(unit_df)
 
-                        value = self.cal_elapsedTime(day,old)
-                        if value > 0 :
-                            indexOfday = df[df['날짜'] == day].index.values.astype(int)
-                            unit_df = df.ix[indexOfday]
-                            unit_df.to_sql('kospi_' + code, con_naver_ks, if_exists='append', index=False)
-                            # print(unit_df)
-
-                        else:
-                            # print('else')
-                            pass
-
-                except Exception as e:
-                    print('#1, AddDay: 예외가 발생했습니다.(2)', e)
+                    else:
+                        pass
 
         self.timeCheck(start, location)
-
 
     #2-2. [프로세스] 실시간 데이터
     def addRealtimeStock(self,code_stock):
@@ -248,8 +214,6 @@ class MainStock:
         table = '\'Stock_Realtime\''
         value = DB_Manager.db_control().checkDBtable(dir_naver_ks_Realtime, table)
         temp_val = value[0]
-        LogPrint(curr_date(),'2. addRealtimeStock 시작')
-
 
         if (temp_val[0] == 0):
             column = '(\'종목\' TEXT PRIMARY KEY ,\'코드\' TEXT ,\'체결가\' INTEGER,\'체결시각\' TEXT)'
@@ -287,13 +251,12 @@ class MainStock:
 
 
                 table = 'Stock_Realtime'
-                column = "종목, 코드, 체결가, 체결시각"
+                # column = "종목, 코드, 체결가, 체결시각"
                 column = '(\'종목\',\'코드\',\'체결가\',\'체결시각\') values (?,?,?,?)'
                 length = 1
 
                 DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
-
-                print('#2, AddRealtime: ', cnt, company, code,data[1], 'DB 저장완료')
+                LogPrint(curr_date(), '#2.AddRealtime:', cnt, company, code, data[1], 'DB 저장완료')
 
 
             except Exception as e:
@@ -307,15 +270,13 @@ class MainStock:
 
         self.timeCheck(start,location)
 
-
-
     #2-3. [프로세스] 전략진행
     def startAlgorithm(self,code_stock):
 
         count = 0
         start = time.time()
         location = 'startAlgorithm'
-        LogPrint(curr_date(),'3. startAlgorithm 시작')
+        LogPrint(curr_date(), '#3.startAlgorithm 시작')
 
         for row in code_stock:
 
@@ -381,7 +342,6 @@ class MainStock:
 
         self.timeCheck(start,location)
 
-
     # 2-4. 파이어베이스에 데이터 업로드
     def uploadRankDB(self):
 
@@ -409,7 +369,7 @@ class MainStock:
         table = '\'' + table + '\''
         data_json =''
         rows = DB_Manager.db_control().viewDBdata_all(dir_result, table)
-        LogPrint(curr_date(),'4. uploadRankDB 시작')
+        LogPrint(curr_date(), '#4.uploadRankDB 시작')
 
         for row in rows:
 
@@ -494,26 +454,22 @@ class MainStock:
         start = time.time()
         location = 'monitorTask'
 
-        print('*********** monitorTask 실행 ***********')
-
         for i in range(len(self.aliveCnt)):
             self.aliveCnt[i] = self.aliveCnt[i] - 1
-            # print('프로세스 테스크 재실행: ,',self.aliveCnt[i])
+            # LogPrint(curr_date(),'=======> monitorTask 카운트:',self.aliveCnt[i])
 
         if (self.aliveCnt[self.DEF_PRO_THR] <= 0):
             self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
             self.processTask()
 
-        # for log
-        # if (self.aliveCnt[DEF_PRO_THR] <= DEF_ALIVE_TM):
-        #     print("### Ready Recover Thread Count: ", self.aliveCnt[DEF_PRO_THR])
+        threading.Timer(1, self.monitorTask).start()
 
-        threading.Timer(self.REPEAT_TIME, self.monitorTask).start()
+
 
     def processTask(self):  # operate every 1sec
 
         print('*********** processTask 실행 ***********')
-        LogPrint(curr_date(),'실행')
+        LogPrint(curr_date(),'processTask 실행')
 
         start = time.time()
         location = 'main'
@@ -526,9 +482,9 @@ class MainStock:
             self.get_NaverStock(init_code)
 
         self.addDayStock(init_code)
-        # self.addRealtimeStock(init_code)
-        # self.startAlgorithm(init_code)
-        # self.uploadRankDB()
+        self.addRealtimeStock(init_code)
+        self.startAlgorithm(init_code)
+        self.uploadRankDB()
 
         sec = self.timeCheck(start, location)
         print('sec: ',sec)
@@ -536,19 +492,6 @@ class MainStock:
         self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
 
         threading.Timer(1, self.processTask).start()
-
-
-    def countTime(self):
-
-        global RELEASE_TIME
-
-        RELEASE_TIME = self.REPEAT_TIME - self.COUNT_TIME
-        # RELEASE_TIME = 10
-
-        for i in range(RELEASE_TIME):
-            RELEASE_TIME -= 1
-            print('재실행 시간', RELEASE_TIME)
-            time.sleep(1)
 
 
 
@@ -565,7 +508,9 @@ def main():
     LogPrint(curr_date(), "MoonStock Program Started!!")
     LogPrint(datetime.datetime.now(), "Started!!")
     ms = MainStock()
+    ms.monitorTask()
     ms.processTask()
+
 
 
 

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9166275-08f3-424d-95ba-fe0f2a6dfed6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AL_Manager.py" afterPath="$PROJECT_DIR$/AL_Manager.py" />
       <change beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
       <change beforePath="$PROJECT_DIR$/db/RESULT.db" afterPath="$PROJECT_DIR$/db/RESULT.db" />
       <change beforePath="$PROJECT_DIR$/db/naver_ks.db" afterPath="$PROJECT_DIR$/db/naver_ks.db" />
@@ -24,53 +23,39 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+            <state relative-caret-position="372">
+              <caret line="459" column="0" lean-forward="false" selection-start-line="459" selection-start-column="0" selection-end-line="459" selection-end-column="0" />
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
-                <element signature="e#1791#1839#0" expanded="false" />
-                <element signature="e#1921#2024#0" expanded="false" />
-                <element signature="e#2111#2985#0" expanded="false" />
-                <element signature="e#6123#8313#0" expanded="false" />
-                <element signature="e#8389#11013#0" expanded="false" />
-                <element signature="e#11080#13468#0" expanded="false" />
-                <element signature="e#13518#13966#0" expanded="false" />
-                <element signature="e#14017#14245#0" expanded="false" />
-                <element signature="e#14301#14496#0" expanded="false" />
-                <element signature="e#14556#15212#0" expanded="false" />
-                <element signature="e#15944#16187#0" expanded="false" />
+                <element signature="e#1925#2028#0" expanded="false" />
+                <element signature="e#2115#2989#0" expanded="false" />
+                <element signature="e#3065#5249#0" expanded="false" />
+                <element signature="e#5328#7478#0" expanded="false" />
+                <element signature="e#7552#10177#0" expanded="false" />
+                <element signature="e#10243#12632#0" expanded="false" />
+                <element signature="e#12682#13130#0" expanded="false" />
+                <element signature="e#13181#13409#0" expanded="false" />
+                <element signature="e#13465#13660#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AL_Manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AL_Manager.py">
+      <file leaf-file-name="ST_Manager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ST_Manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-650">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#1#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Log_File.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Log_File.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FB_Manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FB_Manager.py">
+      <file leaf-file-name="DB_Manager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DB_Manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -88,8 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cnt_page</find>
-      <find>df.append</find>
       <find>%Y</find>
       <find>pg_url</find>
       <find>GET_PAGERANGE</find>
@@ -100,7 +83,6 @@
       <find>이건</find>
       <find>이건 언제 찍나요?</find>
       <find>1. 순서:  445</find>
-      <find>aliveCnt</find>
       <find>디버그용</find>
       <find>print</find>
       <find>row</find>
@@ -108,16 +90,19 @@
       <find>'row</find>
       <find>**********************</find>
       <find>----------------------------------</find>
-      <find>REPEAT_TIME</find>
       <find>재실행</find>
       <find>STATUS</find>
       <find>DEF_PRO_THR</find>
       <find>RELEASE_TIME</find>
       <find>CHECK_TIME</find>
-      <find>DEF_ALIVE_TM</find>
       <find>MoonStock</find>
       <find>is_list_like</find>
       <find>app</find>
+      <find>countTime</find>
+      <find>COUNT_TIME</find>
+      <find>REPEAT_TIME</find>
+      <find>DEF_ALIVE_TM</find>
+      <find>aliveCnt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,18 +131,18 @@
         <option value="$PROJECT_DIR$/backup.py" />
         <option value="$PROJECT_DIR$/BHS_Manager.py" />
         <option value="$PROJECT_DIR$/ST_Manager.py" />
-        <option value="$PROJECT_DIR$/DB_Manager.py" />
         <option value="$PROJECT_DIR$/AL_Manager.py" />
         <option value="/anaconda3/lib/python3.6/site-packages/pandas_datareader/fred.py" />
         <option value="$PROJECT_DIR$/FB_Manager.py" />
         <option value="$PROJECT_DIR$/Log_File.py" />
+        <option value="$PROJECT_DIR$/DB_Manager.py" />
         <option value="$PROJECT_DIR$/Main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="217" />
-    <option name="y" value="103" />
+    <option name="x" value="740" />
+    <option name="y" value="95" />
     <option name="width" value="1432" />
     <option name="height" value="1209" />
   </component>
@@ -177,8 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,18 +334,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="217" y="103" width="1432" height="1209" extended-state="0" />
+    <frame x="740" y="95" width="1432" height="1209" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21787709" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21787709" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35444152" sideWeight="0.51047486" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35444152" sideWeight="0.48952514" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35444152" sideWeight="0.5132682" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35444152" sideWeight="0.48673186" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987034" sideWeight="0.49377593" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16785714" sideWeight="0.5056543" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987034" sideWeight="0.49377593" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -480,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ST_Manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///anaconda3/lib/python3.6/site-packages/pandas/parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -498,13 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB_Manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -547,31 +518,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AL_Manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-650">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#1#12#0" expanded="true" />
+            <element signature="e#1#12#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB_Manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ST_Manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        <state relative-caret-position="372">
+          <caret line="459" column="0" lean-forward="false" selection-start-line="459" selection-start-column="0" selection-end-line="459" selection-end-column="0" />
           <folding>
             <element signature="e#16#27#0" expanded="true" />
-            <element signature="e#1791#1839#0" expanded="false" />
-            <element signature="e#1921#2024#0" expanded="false" />
-            <element signature="e#2111#2985#0" expanded="false" />
-            <element signature="e#6123#8313#0" expanded="false" />
-            <element signature="e#8389#11013#0" expanded="false" />
-            <element signature="e#11080#13468#0" expanded="false" />
-            <element signature="e#13518#13966#0" expanded="false" />
-            <element signature="e#14017#14245#0" expanded="false" />
-            <element signature="e#14301#14496#0" expanded="false" />
-            <element signature="e#14556#15212#0" expanded="false" />
-            <element signature="e#15944#16187#0" expanded="false" />
+            <element signature="e#1925#2028#0" expanded="false" />
+            <element signature="e#2115#2989#0" expanded="false" />
+            <element signature="e#3065#5249#0" expanded="false" />
+            <element signature="e#5328#7478#0" expanded="false" />
+            <element signature="e#7552#10177#0" expanded="false" />
+            <element signature="e#10243#12632#0" expanded="false" />
+            <element signature="e#12682#13130#0" expanded="false" />
+            <element signature="e#13181#13409#0" expanded="false" />
+            <element signature="e#13465#13660#0" expanded="false" />
           </folding>
         </state>
       </provider>
