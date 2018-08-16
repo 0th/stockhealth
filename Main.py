@@ -224,80 +224,37 @@ class MainStock:
 
             df = pd.DataFrame()
             cnt += 1
-
             code = row[0]
             company = row[1]
-
             now = datetime.datetime.now()
             nowDate = now.strftime('%Y%m%d%H%M%S')
             url= 'https://finance.naver.com/item/sise_time.nhn?code={code}&thistime={thistime}'.format(code=code, thistime = nowDate)
             pg_url = '{url}&page={page}'.format(url=url, page=1)
 
-            print('--------------------------------')
-            print(code,company)
-            print(url)
-            print(pg_url)
-
-            df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
-            print(df)
-            df = df.dropna()
-            print(df)
-            data = df.ix[1]
-
-            print('data: ', data)
-            nowDay = now.strftime('%Y-%m-%d')
-            Engagement_time = nowDay + ' ' + data[0]
-            data_column = []
-            data_column.append(company)
-            data_column.append(code)
-            data_column.append(data[1])
-            data_column.append(Engagement_time)
-
-            print('data_column: ', data_column)
-            table = 'Stock_Realtime'
-            column = '(\'종목\',\'코드\',\'체결가\',\'체결시각\') values (?,?,?,?)'
-            length = 1
-            DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
-            # LogPrint(curr_date(), '#2.AddRealtime:', cnt, company, code, data[1], 'DB 저장완료')
-
-            print('#2, AddRealtime: ', cnt, company, code, '/ 데이터가 없습니다.')
-            dropCompany.append(company)
-            dropCode.append(code)
 
 
+            try:
+                df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
+                df = df.dropna()
+                data = df.ix[1]
+                nowDay = now.strftime('%Y-%m-%d')
+                Engagement_time = nowDay + ' ' + data[0]
+                data_column = []
+                data_column.append(company)
+                data_column.append(code)
+                data_column.append(data[1])
+                data_column.append(Engagement_time)
 
+                table = 'Stock_Realtime'
+                column = '(\'종목\',\'코드\',\'체결가\',\'체결시각\') values (?,?,?,?)'
+                length = 1
+                DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
+                LogPrint(curr_date(), '#2.AddRealtime:', cnt, company, code, data[1], 'DB 저장완료')
 
-            # try:
-            #     df = df.append(pd.read_html(pg_url, header=0)[0], ignore_index=True)
-            #     print(df)
-            #     df = df.dropna()
-            #     print(df)
-            #     data = df.ix[1]
-            #
-            #     print('data: ', data)
-            #     nowDay = now.strftime('%Y-%m-%d')
-            #     Engagement_time = nowDay + ' ' + data[0]
-            #     data_column = []
-            #     data_column.append(company)
-            #     data_column.append(code)
-            #     data_column.append(data[1])
-            #     data_column.append(Engagement_time)
-            #
-            #     print('data_column: ', data_column)
-            #     table = 'Stock_Realtime'
-            #     column = '(\'종목\',\'코드\',\'체결가\',\'체결시각\') values (?,?,?,?)'
-            #     length = 1
-            #     DB_Manager.db_control().insertOrReplaceDB(dir_naver_ks_Realtime, table, column, length, data_column)
-            #     # LogPrint(curr_date(), '#2.AddRealtime:', cnt, company, code, data[1], 'DB 저장완료')
-            #
-            # except Exception as e:
-            #     print('#2, AddRealtime: ', cnt, company, code, '/ 데이터가 없습니다.')
-            #     dropCompany.append(company)
-            #     dropCode.append(code)
-
-
-        # LogPrint('1. 사라진 회사 ', dropCompany)
-        # LogPrint('2. 사라진 회사 수', len(dropCompany))
+            except Exception as e:
+                print('#2, AddRealtime: ', cnt, company, code, '/ 데이터가 없습니다.')
+                dropCompany.append(company)
+                dropCode.append(code)
 
         self.timeCheck(start,location)
 
@@ -512,10 +469,10 @@ class MainStock:
         if STATUS_INIT == False:
             self.get_NaverStock(init_code)
 
-        # self.addDayStock(init_code)
+        self.addDayStock(init_code)
         self.addRealtimeStock(init_code)
-        # self.startAlgorithm(init_code)
-        # self.uploadRankDB()
+        self.startAlgorithm(init_code)
+        self.uploadRankDB()
 
         sec = self.timeCheck(start, location)
         print('sec: ',sec)
