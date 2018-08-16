@@ -60,10 +60,8 @@ class MainStock:
     check_replay = 0
 
 
-    DEF_ALIVE_TM = 600
+    DEF_ALIVE_TM = 900
     DEF_PRO_THR = 0
-    # REPEAT_TIME = 300
-    # COUNT_TIME = 0
 
 
 
@@ -470,12 +468,17 @@ class MainStock:
             self.get_NaverStock(init_code)
 
         self.addDayStock(init_code)
+        self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
+
         self.addRealtimeStock(init_code)
+        self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
+
         self.startAlgorithm(init_code)
+        self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
+
         self.uploadRankDB()
 
         sec = self.timeCheck(start, location)
-        print('sec: ',sec)
 
         self.aliveCnt[self.DEF_PRO_THR] = self.DEF_ALIVE_TM
 

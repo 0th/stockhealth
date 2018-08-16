@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9166275-08f3-424d-95ba-fe0f2a6dfed6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Log/LogFile_2018-08-16.log" afterPath="$PROJECT_DIR$/Log/LogFile_2018-08-16.log" />
       <change beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
+      <change beforePath="$PROJECT_DIR$/db/RESULT.db" afterPath="$PROJECT_DIR$/db/RESULT.db" />
       <change beforePath="$PROJECT_DIR$/db/naver_ks_Realtime.db" afterPath="$PROJECT_DIR$/db/naver_ks_Realtime.db" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,19 +23,18 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="468" column="32" lean-forward="true" selection-start-line="468" selection-start-column="32" selection-end-line="468" selection-end-column="32" />
+            <state relative-caret-position="477">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
-                <element signature="e#1925#2028#0" expanded="false" />
-                <element signature="e#2115#2989#0" expanded="false" />
-                <element signature="e#3065#5249#0" expanded="false" />
-                <element signature="e#7398#10023#0" expanded="false" />
-                <element signature="e#10089#12478#0" expanded="false" />
-                <element signature="e#12528#12976#0" expanded="false" />
-                <element signature="e#13027#13255#0" expanded="false" />
-                <element signature="e#13311#13506#0" expanded="false" />
-                <element signature="e#13566#14013#0" expanded="false" />
+                <element signature="e#1880#1983#0" expanded="false" />
+                <element signature="e#2070#2944#0" expanded="false" />
+                <element signature="e#3020#5204#0" expanded="false" />
+                <element signature="e#7353#9978#0" expanded="false" />
+                <element signature="e#10044#12433#0" expanded="false" />
+                <element signature="e#12483#12931#0" expanded="false" />
+                <element signature="e#12982#13210#0" expanded="false" />
+                <element signature="e#13266#13461#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -139,8 +140,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3126" />
-    <option name="y" value="129" />
+    <option name="x" value="2976" />
+    <option name="y" value="171" />
     <option name="width" value="1432" />
     <option name="height" value="1209" />
   </component>
@@ -332,15 +333,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3126" y="129" width="1432" height="1209" extended-state="0" />
+    <frame x="2976" y="171" width="1432" height="1209" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21787709" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35444152" sideWeight="0.5160614" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35444152" sideWeight="0.51885474" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35444152" sideWeight="0.48393854" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35444152" sideWeight="0.48114526" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16785714" sideWeight="0.5056543" order="2" side_tool="true" content_ui="tabs" />
@@ -538,19 +539,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="468" column="32" lean-forward="true" selection-start-line="468" selection-start-column="32" selection-end-line="468" selection-end-column="32" />
+        <state relative-caret-position="477">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="e#16#27#0" expanded="true" />
-            <element signature="e#1925#2028#0" expanded="false" />
-            <element signature="e#2115#2989#0" expanded="false" />
-            <element signature="e#3065#5249#0" expanded="false" />
-            <element signature="e#7398#10023#0" expanded="false" />
-            <element signature="e#10089#12478#0" expanded="false" />
-            <element signature="e#12528#12976#0" expanded="false" />
-            <element signature="e#13027#13255#0" expanded="false" />
-            <element signature="e#13311#13506#0" expanded="false" />
-            <element signature="e#13566#14013#0" expanded="false" />
+            <element signature="e#1880#1983#0" expanded="false" />
+            <element signature="e#2070#2944#0" expanded="false" />
+            <element signature="e#3020#5204#0" expanded="false" />
+            <element signature="e#7353#9978#0" expanded="false" />
+            <element signature="e#10044#12433#0" expanded="false" />
+            <element signature="e#12483#12931#0" expanded="false" />
+            <element signature="e#12982#13210#0" expanded="false" />
+            <element signature="e#13266#13461#0" expanded="false" />
           </folding>
         </state>
       </provider>
