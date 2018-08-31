@@ -331,24 +331,13 @@ class MainStock:
     # 2-4. 파이어베이스에 데이터 업로드
     def uploadRankDB(self):
 
-        # 1. 방법: 딕셔너리로 만들고 그 다음 dump를 통해서 json 문자열로 변경하면된다.
-        # 2. 제이슨 파일로 만들어서 보냄
-        # 3. json_val = json.dump(dict1)
-
-        # 1. 회사이름
-        # 2. 종목
-        # 3. 현재가
-        # 4. 점수
-        # 5. 상태
-        # 6. 날짜
-
 
         count = 0
         start = time.time()
         locaion = 'uploadRankDB'
 
-
-        update_time = self.now.strftime('%Y-%m-%d %H:%M:%S')
+        now_time = datetime.datetime.now()
+        update_time = now_time.strftime('%Y-%m-%d %H:%M:%S')
         now_date = self.now.strftime('%Y%m%d')
         now_date = now_date[2:8]
         table = 'STG1_' + now_date
@@ -394,7 +383,7 @@ class MainStock:
         dir = '/Stock/Rank/'
 
         data_json = data_json[:-1]
-        # print('1. ',data_json)
+        print('1. ',data_json)
 
         data = '{'+ data_json +'}'
         # print('2. ',data)
